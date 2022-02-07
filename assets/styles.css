@@ -15,14 +15,16 @@ header, footer{
 main {
   display: grid;
   justify-content: center;
-  align-item: center; 
-  height: 100vh; 
+  height: 90vh;
+  place-self: center;
+  justify-items: center;
+  width: auto;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   margin: 2rem 0;
   padding: 3rem;
 }
@@ -30,17 +32,18 @@ form {
 fieldset {
   display:flex;
   flex-direction: column;
-  align-item: flex-start;
   gap: 10px;
 }
 
 input {
-  font-size: clamp(0.7rem, 5vw, 1rem);
+  font-size: clamp(0.3rem, 5vw, 1rem);
 }
 
 legend {
   font-size: clamp(1rem, 5vw, 1.3rem);
 }
+
+
 /* ****************** */
 /* ******Layout****** */
 /* ****************** */
