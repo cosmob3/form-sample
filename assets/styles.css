@@ -1,0 +1,79 @@
+/* ****************** */
+/* ****Base Styles*** */
+/* ****************** */
+header, footer{
+  display: grid;
+  justify-content: center;
+  align-item: center;
+  
+  text-align: center;
+  background-color: green;
+  color: black;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-item: center; 
+  height: 100vh; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 3rem;
+}
+
+fieldset {
+  display:flex;
+  flex-direction: column;
+  align-item: flex-start;
+  gap: 10px;
+}
+
+input {
+  font-size: clamp(0.7rem, 5vw, 1rem);
+}
+
+legend {
+  font-size: clamp(1rem, 5vw, 1.3rem);
+}
+/* ****************** */
+/* ******Layout****** */
+/* ****************** */
+
+.grid-layout {
+  display: grid;  
+}
+
+.flex-layout {
+  display: flex;
+  flex-direction: column;
+} 
+
+/* ****************** */
+/* ******Utility***** */
+/* ****************** */
+
+.no-border {
+  border: none;
+}
+
+.input-title {
+  font-size: clamp(1rem, 2.5vw, 1.17rem);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
+
+button:hover {
+  background-color: lightgreen;
+}

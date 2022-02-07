@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Sample</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header class="">
+      <h1>Choose Your Character</h1>
+    </header>
+  <main>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Basic Character Info</legend>
+        
+        
+        <!-- Text Input -->
+        <div class="grid-layout">
+            <label for="name" class="input-title">Name</label>
+            <input type="text" name="name" id="name" maxlength="20" placeholder="required" required>   
+
+            <label for="age" class="input-title">Age</label>
+            <input text="number" name="age" id="age" maxlength="2" placeholder="required" required>
+      
+            <label for="Place of Birth" class="input-title">Place of Birth</label>
+            <input type="Place of Birth" name="Place of Birth" id="Place of Birth" placeholder="optional"> 
+    
+            <label for="date" class="input-title">Date of Birth</label>
+            <input type="date" placeholder="optional">
+        </div>
+      </fieldset>  
+        
+        <!-- Radio-Box -->
+        
+        <fieldset>
+          <legend>Character Customization</legend>
+          <fieldset class="no-border flex-row">
+            <legend class="input-title"><u>Species</u></legend>
+            <div>
+              <label for="human">Human</label>
+              <input type="radio" value="human" name="species" id="human">
+            </div>
+              <div>
+              <label for="e.t.">E.T.</label>
+              <input type="radio" value="e.t." name="species" id="e.t.">
+            </div>
+              <div>
+              <label for="mecha">Mecha</label>
+              <input type="radio" value="mecha" name="species" id="mecha">
+            </div>
+              <div>
+              <label for="amphibian">Amphibian</label>
+              <input type="radio" value="amphibian" name="species" id="amphibian0">
+              </div>
+          </fieldset>
+              <!-- Checkboxes -->
+          <fieldset name="elemental-type" class="no-border flex-row">
+            <legend class="input-title"><u>Elemental Types</u></legend>
+            <div>
+              <label for="earth">Earth</label>
+              <input type="checkbox" value="earth" id="earth" name="elemental-type">       
+            </div>
+            <div>
+              <label for="fire">Fire</label>
+              <input type="checkbox" value="fire" id="fire" name="elemental-type">         
+            </div>
+            <div>
+              <label for="water">Water</label>
+              <input type="checkbox" value="water" id="water" name="elemental-type"> 
+            </div>
+            <div>
+              <label for="air">Air</label>
+              <input type="checkbox" value="air" id="air" name="elemental-type"> 
+            </div>
+            <div>
+              <label for="electric">Electric</label>
+              <input type="checkbox" value="electric" id="electric" name="elemental-type"> 
+            </div>
+          </fieldset>
+        
+      
+              <!-- Dropdown Menu -->
+        
+              <label for="special-ability" class="input-title">Special Ability:</label>
+                <select name="special-ability" id="special-ability">  
+                  <option selected="true" disabled="disabled">Select Your Ability</option>
+                  <option value="Speed">Speed</option> 
+                  <option value="Strength">Strength</option>
+                  <option value="Healing">Healing</option>
+                  <option value="Stamina">Stamina</option>
+  
+        
+        
+                <!-- Other Field -->
+            <div>
+              <label for="feedback">Feedback</label>
+              <textarea rows="5" cols="50" name="text" placeholder="Tell us about your character"></textarea>
+            </div>
+        </fieldset>
+      <button type="submit" class="input-title no-border">Submit</button>
+    </form>
+  </main>
+  <footer>
+      <p>&copy; Bryan Velasco 2022</p>
+    </footer>
+</body>
+</html>
